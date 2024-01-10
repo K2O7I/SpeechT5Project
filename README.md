@@ -2,8 +2,8 @@
 1. pip install -r requirements.txt
 2. python3 download.py
 3. Remenber download: it have the structure:
-   |<folder>
-   &nbsp;|-model
+   &nbsp;|<folder>
+   &nbsp;&nbsp;|-model
    <space>*<space>|     <space>*<space>|-vocoder
    <space>*<space>|     <space>*<space>|-processor
    <space>*<space>|     <space>*<space>|-model
