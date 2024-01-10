@@ -12,9 +12,9 @@ import warnings
 warnings.filterwarnings('ignore')
 path = os.environ['DOWNLOAD_PATH']
 device = "cuda" if torch.cuda.is_available() else "cpu"
-vocoder = SpeechT5HifiGan.from_pretrained("{}/model/vocoder")
-processor = AutoProcessor.from_pretrained("{}/model/processor")
-model = SpeechT5ForTextToSpeech.from_pretrained("{}/model/model")
+vocoder = SpeechT5HifiGan.from_pretrained(r"{}/model/vocoder".format(path))
+processor = AutoProcessor.from_pretrained(r"{}/model/processor".format(path))
+model = SpeechT5ForTextToSpeech.from_pretrained(r"{}/model/model".format(path))
 
 processor.feature_extractor.sampling_rate = 22050
 #processor.feature_extractor.fmax = 76000
@@ -80,7 +80,7 @@ def training(lr, eps,
     #train_dataset = train_dataset.shuffle(seed=37)
     #test_dataset = dataset1['test']
 
-    dataset = load_from_disk("./dataset")
+    dataset = load_from_disk("{}/dataset".format(path))
 
     data_collator = TTSDataCollatorWithPadding(processor=processor)
     model.config.use_cache = False
@@ -140,7 +140,7 @@ def main():
     parser.add_argument('--logging_step', type=int, default=500, help='Logging after this steps')
     parser.add_argument('--save_total_limit', type=int, default=3, help='Number of weight saving')
     parser.add_argument('--dataloader_num_workers', type=int, default=4, help='Data Loading number')
-    parser.add_argument('--output_dir', type=int, default=100, help='Output directory')
+    parser.add_argument('--output_dir', type=str, default="./ST5result", help='Output directory')
     
     args = parser.parse_args()
     
