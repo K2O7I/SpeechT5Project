@@ -3,7 +3,7 @@
 2. python3 download.py
 3. Remenber download: it have the structure:
    |<folder>
-   <space>*<space>|-model
+   &nbsp;|-model
    <space>*<space>|     <space>*<space>|-vocoder
    <space>*<space>|     <space>*<space>|-processor
    <space>*<space>|     <space>*<space>|-model
