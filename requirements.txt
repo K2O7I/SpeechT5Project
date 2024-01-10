@@ -1,0 +1,10 @@
+numpy
+SciPy
+torch
+torchvision 
+torchaudio
+transformers 
+sentencepiece 
+datasets 
+soundfile 
+speechbrain
