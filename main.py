@@ -10,7 +10,7 @@ from typing import Any, Dict, List, Union
 from datasets import load_from_disk
 import warnings
 warnings.filterwarnings('ignore')
-path = os.environ['PATH']
+path = os.environ['DOWNLOAD_PATH']
 device = "cuda" if torch.cuda.is_available() else "cpu"
 vocoder = SpeechT5HifiGan.from_pretrained("{}/model/vocoder")
 processor = AutoProcessor.from_pretrained("{}/model/processor")
