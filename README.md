@@ -3,7 +3,7 @@
 2. python3 download.py
 3. Remenber download: it have the structure:
    
-   &nbsp;<folder>
+   &nbsp; folder
    
    &nbsp;&nbsp;&nbsp;-model
    
@@ -11,7 +11,7 @@
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-processor
    
-   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;-model
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-model
    
    &nbsp;&nbsp;&nbsp;-dataset
    
