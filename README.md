@@ -11,7 +11,7 @@
    
    -folder
    
-   --model
+   > | model
    
    ---vocoder
    
