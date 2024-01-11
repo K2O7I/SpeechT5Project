@@ -7,8 +7,8 @@
 ---
 + **To run the training**:
 1. run "huggingface-cli" login and input "<HF_TOKENs>"
-2. pip install -r requirements.txt
-3. python3 download.py
+2. run "pip install -r requirements.txt"
+3. run "python3 download.py"
 4. Remember download path: it has the structure:
    
    > folder
