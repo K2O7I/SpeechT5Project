@@ -6,7 +6,7 @@
    * huggingface-hub 0.20.2
 ---
 + **To run the training**:
-1. huggingface-cli login
+1. run huggingface-cli login
 2. pip install -r requirements.txt
 3. python3 download.py
 4. Remember download path: it has the structure:
