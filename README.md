@@ -1,9 +1,9 @@
 
 **Project package requirements:**
-   ++ Python 3.10.12
-   ++ accelerate 0.26.0
-   ++ ffmpeg 4.4.2
-   ++ huggingface-hub 0.20.2
+   * Python 3.10.12
+   * accelerate 0.26.0
+   * ffmpeg 4.4.2
+   * huggingface-hub 0.20.2
 ---
 + To run the training:
 1. huggingface-cli login
