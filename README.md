@@ -4,10 +4,12 @@
    ++ accelerate 0.26.0
    ++ ffmpeg 4.4.2
    ++ huggingface-hub 0.20.2
+---
 + To run the training:
-1. pip install -r requirements.txt
-2. python3 download.py
-3. Remenber download: it have the structure:
+1. huggingface-cli login
+2. pip install -r requirements.txt
+3. python3 download.py
+4. Remember download path: it has the structure:
    
    > folder
    
