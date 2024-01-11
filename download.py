@@ -1,9 +1,6 @@
 from transformers import SpeechT5Processor, AutoProcessor, SpeechT5ForTextToSpeech, SpeechT5Model, SpeechT5Config, SpeechT5Tokenizer, SpeechT5HifiGan
 from datasets import load_dataset, concatenate_datasets, DatasetDict
 import os
-hf_token = "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"
-from huggingface_hub import login
-login(token = hf_token)
 
 os.mkdir("./model")
 os.mkdir("./model/vocoder")
@@ -11,11 +8,11 @@ vocoder = SpeechT5HifiGan.from_pretrained("microsoft/speecht5_hifigan")
 vocoder.save_pretrained("./model/vocoder", from_pt=True)
 
 os.mkdir("./model/processor")
-processor = AutoProcessor.from_pretrained("KyS/newProcessor", use_auth_token = hf_token)
+processor = AutoProcessor.from_pretrained("KyS/newProcessor")
 processor.save_pretrained("./model/processor", from_pt=True)
 
 os.mkdir("./model/model")
-model = SpeechT5ForTextToSpeech.from_pretrained("KyS/A_01.1", use_auth_token = hf_token)
+model = SpeechT5ForTextToSpeech.from_pretrained("KyS/A_01.1")
 model.save_pretrained("./model/model", from_pt=True)
 
 #embeddings_dataset = load_dataset("KyS/SpeakerEmbedding", use_auth_token = hf_token)
