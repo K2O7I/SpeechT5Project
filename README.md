@@ -9,16 +9,11 @@
 2. python3 download.py
 3. Remenber download: it have the structure:
    
-   -folder
-   
-   > | model
-   
-   ---vocoder
-   
-   ---processor
-   
-   ---model
-   
-   --dataset
+   > |folder
+   >>> | model
+   >>>>>> | vocoder
+   >>>>>> | processor
+   >>>>>> | model
+   >>> | dataset
    
 5. MODEL_DIR="<folder when running download.py>"python3 main.py --lr 1e-5 --eps 100 --batch_size 16 --output_dir "./SpeechT5"
