@@ -5,7 +5,7 @@
    * ffmpeg 4.4.2
    * huggingface-hub 0.20.2
 ---
-+ To run the training:
++ **To run the training**:
 1. huggingface-cli login
 2. pip install -r requirements.txt
 3. python3 download.py
