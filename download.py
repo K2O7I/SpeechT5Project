@@ -2,20 +2,20 @@ from transformers import SpeechT5Processor, AutoProcessor, SpeechT5ForTextToSpee
 from datasets import load_dataset, concatenate_datasets, DatasetDict
 import os
 
-if not os.path.exists("./model")
-    os.mkdir("./model")
-if not os.path.exists("./model/vocoder")
-    os.mkdir("./model/vocoder")
+if not os.path.exists("./model"):
+  os.mkdir("./model")
+if not os.path.exists("./model/vocoder"):
+  os.mkdir("./model/vocoder")
 vocoder = SpeechT5HifiGan.from_pretrained("microsoft/speecht5_hifigan")
 vocoder.save_pretrained("./model/vocoder", from_pt=True)
 
-if not os.path.exists("./model/processor")
-    os.mkdir("./model/processor")
+if not os.path.exists("./model/processor"):
+  os.mkdir("./model/processor")
 processor = AutoProcessor.from_pretrained("KyS/newProcessor")
 processor.save_pretrained("./model/processor", from_pt=True)
 
-if not os.path.exists("./model/model")
-os.mkdir("./model/model")
+if not os.path.exists("./model/model"):
+  os.mkdir("./model/model")
 model = SpeechT5ForTextToSpeech.from_pretrained("KyS/A_01.1")
 model.save_pretrained("./model/model", from_pt=True)
 
@@ -35,6 +35,7 @@ ds = DatasetDict({
     'test': test_dataset,
     })
 
-if not os.path.exists("./dataset")
-os.mkdir("./dataset")
+if not os.path.exists("./dataset"):
+  os.mkdir("./dataset")
 ds.save_to_disk("./dataset")
+
