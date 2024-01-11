@@ -4,6 +4,7 @@
    * accelerate 0.26.0
    * ffmpeg 4.4.2
    * huggingface-hub 0.20.2
+   * CUDA > 12
 ---
 + **To run the training**:
 1. run "huggingface-cli" login and input "<HF_TOKENs>"
