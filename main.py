@@ -61,7 +61,9 @@ class TTSDataCollatorWithPadding:
 
         # also add in the speaker embeddings
         batch["speaker_embeddings"] = torch.tensor(speaker_features)
-
+        print('>>> speaker_embeddings:\t', batch["speaker_embeddings"].shape)
+        print('>>> input_values:\t', batch["input_values"].shape)
+        print('>>> input_ids:\t', batch["input_ids"].shape)
         return batch
 def training(lr, eps,
             batch_size,
