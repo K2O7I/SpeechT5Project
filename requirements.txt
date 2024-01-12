@@ -1,5 +1,5 @@
 numpy
-python-ffmpeg==4.4.2
+python-ffmpeg
 SciPy
 torch
 torchvision 
