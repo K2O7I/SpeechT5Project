@@ -1,9 +1,9 @@
 
 **Project package requirements:**
    * Python 3.10.12
-   * accelerate 0.26.0
-   * ffmpeg 4.4.2 >>> pip install python-ffmpeg
-   * huggingface-hub 0.20.2
+   * accelerate 0.26.0 >>> pip install accelerate
+   * ffmpeg 4.4.2 >>> pip install python-ffmpeg==4.4.2
+   * huggingface-hub 0.20.2 >>> pip install huggingface-hub
    * CUDA > 12
 ---
 + **To run the training**:
