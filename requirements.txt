@@ -1,4 +1,5 @@
 numpy
+python-ffmpeg==4.4.2
 SciPy
 torch
 torchvision 
