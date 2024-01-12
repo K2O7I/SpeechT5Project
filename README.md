@@ -7,7 +7,7 @@
    * CUDA > 12
 ---
 + **To run the training**:
-1. run "huggingface-cli" login and input "<HF_TOKEN>"
+1. run "huggingface-cli" login and input "<HF_TOKEN>" then "y"
 2. run "pip install -r requirements.txt"
 3. run "python3 download.py"
 4. Remember download path: it has the structure:
@@ -24,4 +24,4 @@
 
    >> dataset
    
-5. python3 main.py --lr 1e-5 --eps 100 --batch_size 16 --output_dir "./SpeechT5"
+5. run python3 main.py --lr 1e-5 --eps 100 --batch_size 16 --output_dir "./SpeechT5"
