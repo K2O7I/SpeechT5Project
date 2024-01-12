@@ -23,17 +23,19 @@ model.save_pretrained("./model/model", from_pt=True)
 #embeddings_dataset.save_pretrained("./model", from_pt=True)
 
 dataset1 = load_dataset("KyS/ReadyforTraining01")
-dataset2 = load_dataset("KyS/ReadyforTraining02")
+#dataset2 = load_dataset("KyS/ReadyforTraining02")
 
-train_dataset_en = dataset2['train'].train_test_split(test_size=0.5, seed=7)
-train_dataset = concatenate_datasets([dataset1['train'], train_dataset_en['train']])
-train_dataset = train_dataset.shuffle(seed=37)
-test_dataset = dataset1['test']
+#train_dataset_en = dataset2['train'].train_test_split(test_size=0.5, seed=7)
+#train_dataset = concatenate_datasets([dataset1['train'], train_dataset_en['train']])
+#train_dataset = train_dataset.shuffle(seed=37)
+#test_dataset = dataset1['test']
 
-ds = DatasetDict({
-    'train': train_dataset,
-    'test': test_dataset,
-    })
+#ds = DatasetDict({
+#    'train': train_dataset,
+#    'test': test_dataset,
+#    })
+
+ds = dataset1
 
 if not os.path.exists("./dataset"):
   os.mkdir("./dataset")
