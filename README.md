@@ -24,4 +24,4 @@
 
    >> dataset
    
-5. MODEL_DIR="*folder path when running download.py*" python3 main.py --lr 1e-5 --eps 100 --batch_size 16 --output_dir "./SpeechT5"
+5. MODEL_DIR="*./*" python3 main.py --lr 1e-5 --eps 100 --batch_size 16 --output_dir "./SpeechT5"
