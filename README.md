@@ -2,7 +2,7 @@
 **Project package requirements:**
    * Python 3.10.12
    * accelerate 0.26.0
-   * ffmpeg 4.4.2
+   * ffmpeg 4.4.2 >>> pip install python-ffmpeg
    * huggingface-hub 0.20.2
    * CUDA > 12
 ---
