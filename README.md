@@ -7,7 +7,7 @@
    * CUDA > 12
 ---
 + **To run the training**:
-1. run "huggingface-cli" login and input "<HF_TOKEN>" then "y"
+1. run "huggingface-cli login" and input "<HF_TOKEN>" then "y"
 2. run "git clone https://github.com/K2O7I/SpeechT5Project.git"
 3. run "cd SpeechT5Project"
 4. run "pip install -r requirements.txt"
